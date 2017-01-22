@@ -72,9 +72,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="InfragisticsWPF4.v16.2, Version=16.2.20162.26, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.Editors.v16.2, Version=16.2.20162.26, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="InfragisticsWPF4.DataPresenter.v16.2, Version=16.2.20162.26, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.DataPresenter.v17.1, Version=17.1.20171.238, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.Editors.v17.1, Version=17.1.20171.238, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="InfragisticsWPF4.v17.1, Version=17.1.20171.238, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>

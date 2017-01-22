@@ -70,7 +70,8 @@ namespace ConfigModuleEditor
 
         private void _dataGrid_ExecutedCommand(object sender, Infragistics.Windows.Controls.Events.ExecutedCommandEventArgs e)
         {
-            if (e.Command == DataPresenterCommands.EndEditModeAndCommitRecord || e.Command == DataPresenterCommands.DeleteSelectedDataRecords)
+            if (e.Command == DataPresenterCommands.EndEditModeAndCommitRecord || e.Command == DataPresenterCommands.DeleteSelectedDataRecords 
+                || e.Command == DataPresenterCommands.CommitChangesToActiveRecord )
                 OnIsDirtyChanged();
         }
 
