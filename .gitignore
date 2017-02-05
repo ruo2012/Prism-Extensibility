@@ -154,6 +154,11 @@ PublishScripts/
 *.nupkg
 # The packages folder can be ignored because of Package Restore
 **/packages/*
+# except package folder in the TemplatePack project
+!TemplatePack/TemplatePack/Packages/*
+!TemplatePack/TemplatePack/Packages/Android/*
+!TemplatePack/TemplatePack/Packages/Containers/*
+!TemplatePack/TemplatePack/Packages/Forms/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
