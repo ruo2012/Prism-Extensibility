@@ -28,12 +28,6 @@ namespace Prism.VisualStudio.Wizards
 
             if (_dialogResult.CreateUwp)
                 CreateProject("UWP");
-
-            if (_dialogResult.CreateWinPhone)
-                CreateProject("WinPhone");
-
-            if (_dialogResult.CreateWinStore)
-                CreateProject("Windows");
         }
 
         void CreateProject(string platform)

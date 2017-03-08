@@ -22,8 +22,6 @@ namespace Prism.VisualStudio.Wizards.Design
             Result.CreateAndroid = _chkAndroid.IsChecked.HasValue ? _chkAndroid.IsChecked.Value : false;
             Result.CreateiOS = _chkiOS.IsChecked.HasValue ? _chkiOS.IsChecked.Value : false;
             Result.CreateUwp = _chkUwp.IsChecked.HasValue ? _chkUwp.IsChecked.Value : false;
-            Result.CreateWinStore = _chkWinStore.IsChecked.HasValue ? _chkWinStore.IsChecked.Value : false;
-            Result.CreateWinPhone = _chkWinPhone.IsChecked.HasValue ? _chkWinPhone.IsChecked.Value : false;
         }
 
         private void _btnCreate_Click(object sender, RoutedEventArgs e)
@@ -45,10 +43,6 @@ namespace Prism.VisualStudio.Wizards.Design
         public bool CreateiOS { get; set; }
 
         public bool CreateUwp { get; set; }
-
-        public bool CreateWinStore { get; set; }
-
-        public bool CreateWinPhone { get; set; }
 
         public bool Cancelled { get; set; }
     }

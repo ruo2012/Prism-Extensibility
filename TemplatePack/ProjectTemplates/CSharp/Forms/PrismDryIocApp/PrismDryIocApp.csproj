@@ -88,26 +88,6 @@
     <None Include="DryIocApp.UWP\project.json" />
     <None Include="DryIocApp.UWP\Properties\AssemblyInfo.cs" />
     <None Include="DryIocApp.UWP\Windows_TemporaryKey.pfx" />
-    <None Include="DryIocApp.Windows\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="DryIocApp.Windows\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="DryIocApp.Windows\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DryIocApp.Windows\Properties\AssemblyInfo.cs" />
-    <None Include="DryIocApp.Windows\Windows_TemporaryKey.pfx" />
-    <None Include="DryIocApp.WinPhone\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="DryIocApp.WinPhone\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="DryIocApp.WinPhone\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="DryIocApp\Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </None>
@@ -117,7 +97,6 @@
     <None Include="DryIocApp.Droid\MainActivity.cs" />
     <None Include="DryIocApp.Droid\Properties\AssemblyInfo.cs" />
     <None Include="DryIocApp.Droid\Resources\Resource.Designer.cs" />
-    <None Include="DryIocApp.WinPhone\Properties\AssemblyInfo.cs" />
     <None Include="DryIocApp.iOS\AppDelegate.cs" />
     <None Include="DryIocApp.iOS\Main.cs" />
     <None Include="DryIocApp.iOS\Properties\AssemblyInfo.cs" />
@@ -149,11 +128,6 @@
     <None Include="DryIocApp.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <None Include="DryIocApp.UWP\Assets\StoreLogo.png" />
     <None Include="DryIocApp.UWP\Assets\Wide310x150Logo.scale-200.png" />
-    <VSTemplate Include="DryIocApp.Windows\DryIocApp.Windows.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-    </VSTemplate>
-    <None Include="DryIocApp.Windows\DryIocAppTemplate.Windows.csproj" />
-    <None Include="DryIocApp.Windows\__TemplateIcon.ico" />
     <None Include="DryIocApp.Droid\Assets\AboutAssets.txt" />
     <None Include="DryIocApp.Droid\DryIocAppTemplate.Droid.csproj" />
     <None Include="DryIocApp.Droid\Properties\AndroidManifest.xml" />
@@ -193,24 +167,9 @@
     </VSTemplate>
     <None Include="DryIocApp.iOS\DryIocAppTemplate.iOS.csproj" />
     <Content Include="DryIocApp.iOS\__TemplateIcon.ico" />
-    <None Include="DryIocApp.WinPhone\DryIocAppTemplate.WinPhone.csproj" />
-    <None Include="DryIocApp.Windows\Assets\Logo.scale-100.png" />
-    <None Include="DryIocApp.Windows\Assets\SmallLogo.scale-100.png" />
-    <None Include="DryIocApp.Windows\Assets\SplashScreen.scale-100.png" />
-    <None Include="DryIocApp.Windows\Assets\StoreLogo.scale-100.png" />
-    <None Include="DryIocApp.WinPhone\Assets\Logo.scale-240.png" />
-    <None Include="DryIocApp.WinPhone\Assets\SmallLogo.scale-240.png" />
-    <None Include="DryIocApp.WinPhone\Assets\SplashScreen.scale-240.png" />
-    <None Include="DryIocApp.WinPhone\Assets\Square71x71Logo.scale-240.png" />
-    <None Include="DryIocApp.WinPhone\Assets\StoreLogo.scale-240.png" />
-    <None Include="DryIocApp.WinPhone\Assets\WideLogo.scale-240.png" />
-    <VSTemplate Include="DryIocApp.WinPhone\DryIocApp.WinPhone.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-    </VSTemplate>
     <None Include="DryIocApp\DryIocAppTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
-    <None Include="DryIocApp.WinPhone\__TemplateIcon.ico" />
     <None Include="DryIocApp\DryIocApp.vstemplate" />
     <None Include="DryIocApp\__TemplateIcon.ico" />
   </ItemGroup>
@@ -244,26 +203,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="DryIocApp.UWP\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DryIocApp.WinPhone\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DryIocApp.WinPhone\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DryIocApp.Windows\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DryIocApp.Windows\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>

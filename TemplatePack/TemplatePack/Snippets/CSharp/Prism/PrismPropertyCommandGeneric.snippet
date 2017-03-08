@@ -28,7 +28,8 @@
       </Declarations>
       <Code Language="csharp">
         <![CDATA[private DelegateCommand<$parameterType$> $fieldName$Command;
-        public DelegateCommand<$parameterType$> $CommandName$Command => $fieldName$Command ?? ($fieldName$Command = new DelegateCommand<$parameterType$>($CommandName$, Can$CommandName$));]]>
+        public DelegateCommand<$parameterType$> $CommandName$Command => 
+            $fieldName$Command ?? ($fieldName$Command = new DelegateCommand<$parameterType$>($CommandName$, Can$CommandName$));]]>
       </Code>
     </Snippet>
   </CodeSnippet>
