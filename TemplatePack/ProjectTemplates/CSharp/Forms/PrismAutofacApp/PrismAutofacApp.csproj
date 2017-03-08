@@ -88,26 +88,6 @@
     <None Include="AutofacApp.UWP\project.json" />
     <None Include="AutofacApp.UWP\Properties\AssemblyInfo.cs" />
     <None Include="AutofacApp.UWP\Windows_TemporaryKey.pfx" />
-    <None Include="AutofacApp.Windows\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="AutofacApp.Windows\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="AutofacApp.Windows\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AutofacApp.Windows\Properties\AssemblyInfo.cs" />
-    <None Include="AutofacApp.Windows\Windows_TemporaryKey.pfx" />
-    <None Include="AutofacApp.WinPhone\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="AutofacApp.WinPhone\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="AutofacApp.WinPhone\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="AutofacApp\Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </None>
@@ -117,7 +97,6 @@
     <None Include="AutofacApp.Droid\MainActivity.cs" />
     <None Include="AutofacApp.Droid\Properties\AssemblyInfo.cs" />
     <None Include="AutofacApp.Droid\Resources\Resource.Designer.cs" />
-    <None Include="AutofacApp.WinPhone\Properties\AssemblyInfo.cs" />
     <None Include="AutofacApp.iOS\AppDelegate.cs" />
     <None Include="AutofacApp.iOS\Main.cs" />
     <None Include="AutofacApp.iOS\Properties\AssemblyInfo.cs" />
@@ -149,11 +128,6 @@
     <None Include="AutofacApp.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <None Include="AutofacApp.UWP\Assets\StoreLogo.png" />
     <None Include="AutofacApp.UWP\Assets\Wide310x150Logo.scale-200.png" />
-    <VSTemplate Include="AutofacApp.Windows\AutofacApp.Windows.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-    </VSTemplate>
-    <None Include="AutofacApp.Windows\AutofacAppTemplate.Windows.csproj" />
-    <None Include="AutofacApp.Windows\__TemplateIcon.ico" />
     <None Include="AutofacApp.Droid\Assets\AboutAssets.txt" />
     <None Include="AutofacApp.Droid\AutofacAppTemplate.Droid.csproj" />
     <None Include="AutofacApp.Droid\Properties\AndroidManifest.xml" />
@@ -193,25 +167,9 @@
     </VSTemplate>
     <None Include="AutofacApp.iOS\AutofacAppTemplate.iOS.csproj" />
     <Content Include="AutofacApp.iOS\__TemplateIcon.ico" />
-    <None Include="AutofacApp.WinPhone\AutofacAppTemplate.WinPhone.csproj" />
-    <None Include="AutofacApp.Windows\Assets\Logo.scale-100.png" />
-    <None Include="AutofacApp.Windows\Assets\SmallLogo.scale-100.png" />
-    <None Include="AutofacApp.Windows\Assets\SplashScreen.scale-100.png" />
-    <None Include="AutofacApp.Windows\Assets\StoreLogo.scale-100.png" />
-    <None Include="AutofacApp.WinPhone\Assets\Logo.scale-240.png" />
-    <None Include="AutofacApp.WinPhone\Assets\SmallLogo.scale-240.png" />
-    <None Include="AutofacApp.WinPhone\Assets\SplashScreen.scale-240.png" />
-    <None Include="AutofacApp.WinPhone\Assets\Square71x71Logo.scale-240.png" />
-    <None Include="AutofacApp.WinPhone\Assets\StoreLogo.scale-240.png" />
-    <None Include="AutofacApp.WinPhone\Assets\WideLogo.scale-240.png" />
-    <VSTemplate Include="AutofacApp.WinPhone\AutofacApp.WinPhone.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-      <SubType>Designer</SubType>
-    </VSTemplate>
     <None Include="AutofacApp\AutofacAppTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
-    <None Include="AutofacApp.WinPhone\__TemplateIcon.ico" />
     <None Include="AutofacApp\AutofacApp.vstemplate" />
     <None Include="AutofacApp\__TemplateIcon.ico" />
   </ItemGroup>
@@ -245,26 +203,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="AutofacApp.UWP\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AutofacApp.WinPhone\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AutofacApp.WinPhone\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AutofacApp.Windows\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AutofacApp.Windows\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>

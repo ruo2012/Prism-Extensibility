@@ -88,26 +88,6 @@
     <None Include="NinjectApp.UWP\project.json" />
     <None Include="NinjectApp.UWP\Properties\AssemblyInfo.cs" />
     <None Include="NinjectApp.UWP\Windows_TemporaryKey.pfx" />
-    <None Include="NinjectApp.Windows\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="NinjectApp.Windows\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="NinjectApp.Windows\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NinjectApp.Windows\Properties\AssemblyInfo.cs" />
-    <None Include="NinjectApp.Windows\Windows_TemporaryKey.pfx" />
-    <None Include="NinjectApp.WinPhone\App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </None>
-    <None Include="NinjectApp.WinPhone\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </None>
-    <None Include="NinjectApp.WinPhone\Package.appxmanifest">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="NinjectApp\Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </None>
@@ -117,7 +97,6 @@
     <None Include="NinjectApp.Droid\MainActivity.cs" />
     <None Include="NinjectApp.Droid\Properties\AssemblyInfo.cs" />
     <None Include="NinjectApp.Droid\Resources\Resource.Designer.cs" />
-    <None Include="NinjectApp.WinPhone\Properties\AssemblyInfo.cs" />
     <None Include="NinjectApp.iOS\AppDelegate.cs" />
     <None Include="NinjectApp.iOS\Main.cs" />
     <None Include="NinjectApp.iOS\Properties\AssemblyInfo.cs" />
@@ -149,11 +128,6 @@
     <None Include="NinjectApp.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <None Include="NinjectApp.UWP\Assets\StoreLogo.png" />
     <None Include="NinjectApp.UWP\Assets\Wide310x150Logo.scale-200.png" />
-    <VSTemplate Include="NinjectApp.Windows\NinjectApp.Windows.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-    </VSTemplate>
-    <None Include="NinjectApp.Windows\NinjectAppTemplate.Windows.csproj" />
-    <None Include="NinjectApp.Windows\__TemplateIcon.ico" />
     <None Include="NinjectApp.Droid\Assets\AboutAssets.txt" />
     <None Include="NinjectApp.Droid\NinjectAppTemplate.Droid.csproj" />
     <None Include="NinjectApp.Droid\Properties\AndroidManifest.xml" />
@@ -193,24 +167,9 @@
     </VSTemplate>
     <None Include="NinjectApp.iOS\NinjectAppTemplate.iOS.csproj" />
     <Content Include="NinjectApp.iOS\__TemplateIcon.ico" />
-    <None Include="NinjectApp.WinPhone\NinjectAppTemplate.WinPhone.csproj" />
-    <None Include="NinjectApp.Windows\Assets\Logo.scale-100.png" />
-    <None Include="NinjectApp.Windows\Assets\SmallLogo.scale-100.png" />
-    <None Include="NinjectApp.Windows\Assets\SplashScreen.scale-100.png" />
-    <None Include="NinjectApp.Windows\Assets\StoreLogo.scale-100.png" />
-    <None Include="NinjectApp.WinPhone\Assets\Logo.scale-240.png" />
-    <None Include="NinjectApp.WinPhone\Assets\SmallLogo.scale-240.png" />
-    <None Include="NinjectApp.WinPhone\Assets\SplashScreen.scale-240.png" />
-    <None Include="NinjectApp.WinPhone\Assets\Square71x71Logo.scale-240.png" />
-    <None Include="NinjectApp.WinPhone\Assets\StoreLogo.scale-240.png" />
-    <None Include="NinjectApp.WinPhone\Assets\WideLogo.scale-240.png" />
-    <VSTemplate Include="NinjectApp.WinPhone\NinjectApp.WinPhone.vstemplate">
-      <OutputSubPath>Prism\Xamarin.Forms</OutputSubPath>
-    </VSTemplate>
     <None Include="NinjectApp\NinjectAppTemplate.csproj">
       <SubType>Designer</SubType>
     </None>
-    <None Include="NinjectApp.WinPhone\__TemplateIcon.ico" />
     <None Include="NinjectApp\NinjectApp.vstemplate" />
     <None Include="NinjectApp\__TemplateIcon.ico" />
   </ItemGroup>
@@ -244,26 +203,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="NinjectApp.UWP\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NinjectApp.WinPhone\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NinjectApp.WinPhone\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NinjectApp.Windows\App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NinjectApp.Windows\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </None>

@@ -53,13 +53,10 @@
                     <Label Style="{StaticResource TitleStyle}">Create new project</Label>
                     <Label Style="{StaticResource SubTitleStyle}">Select the platform(s) your Xamarin.Forms project will support:</Label>
                 </StackPanel>
-                
                 <!--  CheckBoxes Grid  -->
-                <Grid Grid.Row="1" Margin="0 0 0 10" VerticalAlignment="Center">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="60" />
-                        <RowDefinition Height="80" />
-                    </Grid.RowDefinitions>
+                <Grid Grid.Row="1"
+                  Margin="0 0 0 10"
+                  VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.1*" />
                         <ColumnDefinition Width="0.1*" />
@@ -143,60 +140,6 @@
                               Grid.Row="1"
                               Grid.Column="1"
                               Content="UWP"
-                              IsChecked="False"
-                              Style="{StaticResource CheckBoxStyle}" />
-                    </Grid>
-                    <!--  WinStore  -->
-                    <Grid Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="120" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Path Margin="0 0 0 5"
-                          HorizontalAlignment="Center"
-                          Data="{StaticResource Uwp}"
-                          Fill="{StaticResource IconBackgroundBrush}"
-                          Stretch="Fill"
-                          Width="53"
-                          Height="27"/>
-                        <Border Grid.Row="1" Style="{StaticResource PlatformTitleBackgroundStyle}">
-                            <Label Style="{StaticResource PlatformTitleStyle}">STORE 8.1</Label>
-                        </Border>
-                        <CheckBox x:Name="_chkWinStore"
-                              Grid.Row="1"
-                              Grid.Column="1"
-                              Content="Store 8.1"
-                              IsChecked="False"
-                              Style="{StaticResource CheckBoxStyle}" />
-                    </Grid>
-                    <!--  WinPhone  -->
-                    <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="120" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Path Margin="0 0 0 5"
-                          HorizontalAlignment="Center"
-                          Data="{StaticResource Uwp}"
-                          Fill="{StaticResource IconBackgroundBrush}"
-                          Stretch="Fill"
-                          Width="47"
-                          Height="29"/>
-                        <Border Grid.Row="1" Style="{StaticResource PlatformTitleBackgroundStyle}">
-                            <Label Style="{StaticResource PlatformTitleStyle}">PHONE 8.1</Label>
-                        </Border>
-                        <CheckBox x:Name="_chkWinPhone"
-                              Grid.Row="1"
-                              Grid.Column="1"
-                              Content="Phone 8.1"
                               IsChecked="False"
                               Style="{StaticResource CheckBoxStyle}" />
                     </Grid>
