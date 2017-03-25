@@ -8,7 +8,7 @@ namespace $safeprojectname$
     {
         IRegionManager _regionManager;
 
-        public Module(RegionManager regionManager)
+        public Module(IRegionManager regionManager)
         {
             _regionManager = regionManager;
         }

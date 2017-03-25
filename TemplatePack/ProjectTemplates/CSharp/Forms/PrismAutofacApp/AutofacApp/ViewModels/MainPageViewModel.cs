@@ -26,7 +26,12 @@ namespace $safeprojectname$.ViewModels
 
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+		public void OnNavigatingTo(NavigationParameters parameters)
+		{
+
+		}
+
+		public void OnNavigatedTo(NavigationParameters parameters)
         {
             if (parameters.ContainsKey("title"))
                 Title = (string)parameters["title"] + " and Prism";

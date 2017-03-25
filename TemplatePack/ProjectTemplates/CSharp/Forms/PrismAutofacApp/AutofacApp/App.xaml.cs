@@ -2,6 +2,7 @@
 using Prism.Autofac;
 using Prism.Autofac.Forms;
 using $safeprojectname$.Views;
+using Xamarin.Forms;
 
 namespace $safeprojectname$
 {
@@ -13,12 +14,13 @@ namespace $safeprojectname$
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("NavigationPage/MainPage?title=Hello%20from%20Xamarin.Forms");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
+			Container.RegisterTypeForNavigation<NavigationPage>();
+			Container.RegisterTypeForNavigation<MainPage>();
         }
     }
 }
