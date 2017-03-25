@@ -103,9 +103,6 @@
     <Content Include="Packages\Prism\Prism.Core.6.3.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Prism\Prism.DryIoc.Forms.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Packages\Prism\Prism.Forms.6.3.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -158,6 +155,9 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Packages\Containers\structuremap.4.4.0.nupkg">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Packages\Prism\Prism.DryIoc.Forms.6.3.0.1.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">

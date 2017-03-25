@@ -63,7 +63,7 @@
       <package id="Xamarin.Forms" version="2.3.3.193" />
       <package id="Prism.Core" version="6.3.0" />
       <package id="Prism.Forms" version="6.3.0" />
-      <package id="Prism.DryIoc.Forms" version="6.3.0" />
+      <package id="Prism.DryIoc.Forms" version="6.3.0.1" />
       <package id="DryIoc.dll" version="2.10.1" />
     </packages>
     <packages repository="registry" keyName="NETCoreSDK" isPreunzipped="true">

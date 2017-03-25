@@ -47,7 +47,7 @@
 		<Asset Type="NuGet.Package" d:Source="File" Path="Packages\Prism\prism.autofac.6.3.0.nupkg" d:VsixSubPath="Packages" />
 		<Asset Type="NuGet.Package" d:Source="File" Path="Packages\Prism\prism.autofac.forms.6.3.0.nupkg" d:VsixSubPath="Packages" />
 		<Asset Type="Nuget.Package" d:Source="File" Path="Packages\Prism\prism.core.6.3.0.nupkg" d:VsixSubPath="Packages" />
-		<Asset Type="Nuget.Package" d:Source="File" Path="Packages\Prism\prism.dryioc.forms.6.3.0.nupkg" d:VsixSubPath="Packages" />
+		<Asset Type="Nuget.Package" d:Source="File" Path="Packages\Prism\prism.dryioc.forms.6.3.0.1.nupkg" d:VsixSubPath="Packages" />
 		<Asset Type="Nuget.Package" d:Source="File" Path="Packages\Prism\prism.forms.6.3.0.nupkg" d:VsixSubPath="Packages" />
 		<Asset Type="NuGet.Package" d:Source="File" Path="Packages\Prism\prism.ninject.6.3.0.nupkg" d:VsixSubPath="Packages" />
 		<Asset Type="NuGet.Package" d:Source="File" Path="Packages\Prism\prism.ninject.forms.6.3.0.nupkg" d:VsixSubPath="Packages" />
