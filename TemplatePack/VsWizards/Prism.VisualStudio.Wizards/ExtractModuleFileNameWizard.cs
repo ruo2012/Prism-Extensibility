@@ -35,7 +35,6 @@ namespace Prism.VisualStudio.Wizards
             if (codeClass != null)
             {
                 codeClass.Name = moduleName;
-                item.Save();
                 item.Name = className;
             }
         }

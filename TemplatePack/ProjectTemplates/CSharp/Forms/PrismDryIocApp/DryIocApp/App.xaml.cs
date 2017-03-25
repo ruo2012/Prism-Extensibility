@@ -1,6 +1,8 @@
 ﻿using DryIoc;
 using Prism.DryIoc;
+using $safeprojectname$.ViewModels;
 using $safeprojectname$.Views;
+using Xamarin.Forms;
 
 namespace $safeprojectname$
 {
@@ -17,7 +19,8 @@ namespace $safeprojectname$
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
-        }
+			Container.RegisterTypeForNavigation<MainPage>();
+			Container.Register<MainPageViewModel>(); //DryIoc requires you to register concrete types. This will be improved in a future Prism update
+		}
     }
 }
