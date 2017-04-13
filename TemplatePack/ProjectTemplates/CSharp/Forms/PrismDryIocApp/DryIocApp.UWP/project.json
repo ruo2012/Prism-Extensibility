@@ -1,12 +1,12 @@
 ﻿{
-  "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "Prism.Core": "6.2.0",
-    "Prism.Forms": "6.2.0",
-    "Prism.DryIoc.Forms": "6.2.0",
-    "DryIoc.dll": "2.6.4",
-    "Xamarin.Forms": "2.3.1.114"
-  },
+	"dependencies": {
+		"Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+		"Prism.Core": "6.3.0",
+		"Prism.Forms": "6.3.0",
+		"Prism.DryIoc.Forms": "6.3.0.1",
+		"DryIoc.dll": "2.10.1",
+		"Xamarin.Forms": "2.3.3.193"
+	},
   "frameworks": {
     "uap10.0": {}
   },
