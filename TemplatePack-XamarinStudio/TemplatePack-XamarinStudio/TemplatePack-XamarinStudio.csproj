@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\MonoDevelop.Addins.0.3.14\build\net45\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.14\build\net45\MonoDevelop.Addins.props')" />
+  <Import Project="..\packages\MonoDevelop.Addins.0.3.16\build\net45\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.16\build\net45\MonoDevelop.Addins.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -107,9 +107,43 @@
     </AddinFile>
     <AddinFile Include="ProjectTemplates\PrismUnityApp\PrismUnityApp.xpt.xml" />
     <AddinFile Include="Snippets\PrismCodeTemplates.xml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp\App.xaml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </AddinFile>
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp\MainPage.xaml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </AddinFile>
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp\MainPageViewModel.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\AppInitializer.AppProject.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\AppInitializer.UITestProject.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\UITests.AppProject.Android.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\UITests.AppProject.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\UITests.AppProject.iOS.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\UITests.UITestProject.Android.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.UITests\UITests.UITestProject.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\AppDelegate.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\Entitlements.plist.xml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\Info_Universal.plist.xml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\LaunchScreen.xib" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\Main.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.iOS\AppIcons\AppIcons.json" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\PrismDryIocApp.xpt.xml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\Resource.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\AndroidManifest.xml" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\AssemblyInfo.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\icondrawable.png" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\icondrawablehdpi.png" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\icondrawablexhdpi.png" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\icondrawablexxhdpi.png" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\MainActivity.cs" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\AboutAssets.txt" />
+    <AddinFile Include="ProjectTemplates\PrismDryIocApp\DryIocApp.Droid\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ProjectTemplates\PrismDryIocApp\prism-logo-32.png" />
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\packages\MonoDevelop.Addins.0.3.14\build\net45\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.14\build\net45\MonoDevelop.Addins.targets')" />
+  <Import Project="..\packages\MonoDevelop.Addins.0.3.16\build\net45\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.16\build\net45\MonoDevelop.Addins.targets')" />
 </Project>
