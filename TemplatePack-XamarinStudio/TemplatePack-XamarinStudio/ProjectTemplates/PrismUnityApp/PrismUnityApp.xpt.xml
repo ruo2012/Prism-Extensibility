@@ -78,11 +78,11 @@
 
 			</Files>
 			<Packages>
-				<Package Id="Xamarin.Forms" Version="2.3.1.114"/> 
+				<Package Id="Xamarin.Forms" Version="2.3.4.247"/> 
 				<Package ID="Xamarin.Insights" Version="1.12.3" if="AddInsightsNuget"/>
-				<Package Id="Prism.Core" Version="6.2.0"/>
-				<Package Id="Prism.Forms" Version="6.2.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.2.0"/>
+				<Package Id="Prism.Core" Version="6.3.0"/>
+				<Package Id="Prism.Forms" Version="6.3.0"/>
+				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
 			</Packages>
 		</Project>
 
@@ -111,11 +111,11 @@
 			
 			</Files>
 			<Packages>
-				<Package Id="Xamarin.Forms" Version="2.3.1.114"/>
-				<Package ID="Xamarin.TestCloud.Agent" Version="0.16.2" if="CreateUITestProject"/>
-				<Package Id="Prism.Core" Version="6.2.0"/>
-				<Package Id="Prism.Forms" Version="6.2.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.2.0"/>
+				<Package Id="Xamarin.Forms" Version="2.3.4.247"/>
+				<Package ID="Xamarin.TestCloud.Agent" Version="0.20.6" if="CreateUITestProject"/>
+				<Package Id="Prism.Core" Version="6.3.0"/>
+				<Package Id="Prism.Forms" Version="6.3.0"/>
+				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
 			</Packages>
 		</Project>
 
@@ -165,9 +165,9 @@
 			<Packages>
 				<Package Id="Xamarin.Android.Support.v4" Version="23.3.0" />
 				<Package Id="Xamarin.Forms" Version="2.3.1.114"/> 
-				<Package Id="Prism.Core" Version="6.2.0"/>
-				<Package Id="Prism.Forms" Version="6.2.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.2.0"/>
+				<Package Id="Prism.Core" Version="6.3.0"/>
+				<Package Id="Prism.Forms" Version="6.3.0"/>
+				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
 			</Packages>
 		</Project>
 
@@ -189,7 +189,7 @@
 
 			<Packages>
 				<Package ID="NUnit" Version="3.2.1" />
-				<Package ID="Xamarin.UITest" Version="1.3.8" />
+				<Package ID="Xamarin.UITest" Version="2.0.9" />
 			</Packages>
 		</Project>
 
