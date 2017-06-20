@@ -8,6 +8,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>TemplatePackXamarinStudio</RootNamespace>
     <AssemblyName>TemplatePack-XamarinStudio</AssemblyName>
+    <ReleaseVersion>2.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
