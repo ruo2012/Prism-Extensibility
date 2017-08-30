@@ -78,12 +78,12 @@
 
 			</Files>
 			<Packages>
-				<Package Id="Xamarin.Forms" Version="2.3.4.247"/> 
+				<Package Id="Xamarin.Forms" Version="2.3.4.270"/> 
 				<Package ID="Xamarin.Insights" Version="1.12.3" if="AddInsightsNuget"/>
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
 				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
-				<Package Id="DryIoc.dll" Version="2.11.3" />
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -112,12 +112,12 @@
 			
 			</Files>
 			<Packages>
-				<Package Id="Xamarin.Forms" Version="2.3.4.247"/>
-				<Package ID="Xamarin.TestCloud.Agent" Version="0.20.6" if="CreateUITestProject"/>
+				<Package Id="Xamarin.Forms" Version="2.3.4.270"/>
+				<Package ID="Xamarin.TestCloud.Agent" Version="0.20.7" if="CreateUITestProject"/>
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
 				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
-				<Package Id="DryIoc.dll" Version="2.11.3" />
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -166,11 +166,11 @@
 			</Files>
 			<Packages>
 				<Package Id="Xamarin.Android.Support.v4" Version="23.3.0" />
-				<Package Id="Xamarin.Forms" Version="2.3.4.247"/> 
+				<Package Id="Xamarin.Forms" Version="2.3.4.270"/> 
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
 				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
-				<Package Id="DryIoc.dll" Version="2.11.3" />
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -192,7 +192,7 @@
 
 			<Packages>
 				<Package ID="NUnit" Version="3.2.1" />
-				<Package ID="Xamarin.UITest" Version="2.0.9" />
+				<Package ID="Xamarin.UITest" Version="2.0.10" />
 			</Packages>
 		</Project>
 
