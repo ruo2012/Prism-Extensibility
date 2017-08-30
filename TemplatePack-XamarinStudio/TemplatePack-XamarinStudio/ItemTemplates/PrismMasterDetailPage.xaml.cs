@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace ${Namespace}.Views
+namespace ${Namespace}
 {
 	public partial class ${Name} : MasterDetailPage
 	{

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0"?>
 <Template>
 	<TemplateConfiguration>
-		<_Name>Prism Unity App</_Name>
+		<_Name>Prism DryIoc App</_Name>
 		<Image id="prism-project-xamarin-forms"/>
 		<Icon>md-project</Icon>
 		<_Category>crossplat/app/forms</_Category>
 		<LanguageName>C#</LanguageName>
 	    <SupportedParameters>CrossPlatIdentifiers, TargetPlatform, SharedCode</SupportedParameters>
 		<Wizard>Xamarin.Forms.ProjectTemplateWizard</Wizard>
-		<_Description>Creates a Xamarin.Forms app using a Shared Project or Portable Class Library using Prism and Unity.</_Description>
+		<_Description>Creates a Xamarin.Forms app using a Shared Project or Portable Class Library using Prism and DryIoc.</_Description>
 	</TemplateConfiguration>
 	<Actions>
 	</Actions>
@@ -27,29 +27,29 @@
 				<File name="App.xaml" 
 					  BuildAction="EmbeddedResource"
 					  CustomTool="MSBuild:UpdateDesignTimeXaml"
-					  src="UnityApp/App.xaml"/>
+					  src="DryIocApp/App.xaml"/>
 	        	<File name="App.xaml.cs" 
 	        	  	  DependsOn="App.xaml" 
-	        	  	  src="UnityApp/App.xaml.cs"/>
+	        	  	  src="DryIocApp/App.xaml.cs"/>
 
 	        	<Directory name="Views">
 	        		<File name="MainPage.xaml" 
 						  BuildAction="EmbeddedResource"
 						  CustomTool="MSBuild:UpdateDesignTimeXaml"
-						  src="UnityApp/MainPage.xaml"/>
+						  src="DryIocApp/MainPage.xaml"/>
 	        		<File name="MainPage.xaml.cs" 
 		        	  	  DependsOn="MainPage.xaml" 
-		        	  	  src="UnityApp/MainPage.xaml.cs"/>
+		        	  	  src="DryIocApp/MainPage.xaml.cs"/>
 	        	</Directory>
 
 	        	<Directory name="ViewModels">
-	        		<File name="MainPageViewModel.cs" src="UnityApp/MainPageViewModel.cs" />
+	        		<File name="MainPageViewModel.cs" src="DryIocApp/MainPageViewModel.cs" />
 	        	</Directory>
 			</Files>
 		</Project>
 
 		<Project name = "${ProjectName}" directory = "." type = "C#PortableLibrary" if = "CreatePortableDotNetProject" >
-			<Options Target = "Library" TargetFrameworkVersion = ".NETPortable,Version=v4.5,Profile=Profile78"/>
+			<Options Target = "Library" TargetFrameworkVersion = ".NETPortable,Version=v4.5,Profile=Profile111"/>
 			<Files>
 
 				<FileTemplateReference TemplateID="CSharpAssemblyInfo" name="AssemblyInfo.cs" />
@@ -57,23 +57,23 @@
 				<File name="App.xaml" 
 					  BuildAction="EmbeddedResource"
 					  CustomTool="MSBuild:UpdateDesignTimeXaml"
-					  src="UnityApp/App.xaml"/>
+					  src="DryIocApp/App.xaml"/>
 	        	<File name="App.xaml.cs" 
 	        	  	  DependsOn="App.xaml" 
-	        	  	  src="UnityApp/App.xaml.cs"/>
+	        	  	  src="DryIocApp/App.xaml.cs"/>
 
 	        	<Directory name="Views">
 	        		<File name="MainPage.xaml" 
 						  BuildAction="EmbeddedResource"
 						  CustomTool="MSBuild:UpdateDesignTimeXaml"
-						  src="UnityApp/MainPage.xaml"/>
+						  src="DryIocApp/MainPage.xaml"/>
 	        		<File name="MainPage.xaml.cs" 
 		        	  	  DependsOn="MainPage.xaml" 
-		        	  	  src="UnityApp/MainPage.xaml.cs"/>
+		        	  	  src="DryIocApp/MainPage.xaml.cs"/>
 	        	</Directory>
 
 	        	<Directory name="ViewModels">
-	        		<File name="MainPageViewModel.cs" src="UnityApp/MainPageViewModel.cs" />
+	        		<File name="MainPageViewModel.cs" src="DryIocApp/MainPageViewModel.cs" />
 	        	</Directory>
 
 			</Files>
@@ -82,7 +82,8 @@
 				<Package ID="Xamarin.Insights" Version="1.12.3" if="AddInsightsNuget"/>
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
+				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -99,15 +100,15 @@
 				<Directory name="Resources">
 					<Directory name="Images.xcassets">
 						<Directory name="AppIcons.appiconset">
-							<RawFile name="Contents.json" SuppressAutoOpen="False" BuildAction="ImageAsset" src="UnityApp.iOS/AppIcons/AppIcons.json" />
+							<RawFile name="Contents.json" SuppressAutoOpen="False" BuildAction="ImageAsset" src="DryIocApp.iOS/AppIcons/AppIcons.json" />
 						</Directory>
 					</Directory>
-					<File name="LaunchScreen.xib" AddStandardHeader="False" SuppressAutoOpen="True" src="UnityApp.iOS/LaunchScreen.xib" />
+					<File name="LaunchScreen.xib" AddStandardHeader="False" SuppressAutoOpen="True" src="DryIocApp.iOS/LaunchScreen.xib" />
 				</Directory>
-				<File name="Info.plist" AddStandardHeader="False" src="UnityApp.iOS/Info_Universal.plist.xml" />
-				<File name="Entitlements.plist" AddStandardHeader="False" src="UnityApp.iOS/Entitlements.plist.xml" />
-				<File name="Main.cs" AddStandardHeader="True" src="UnityApp.iOS/Main.cs" />
-				<File name="AppDelegate.cs" AddStandardHeader="True" src="UnityApp.iOS/AppDelegate.cs" />
+				<File name="Info.plist" AddStandardHeader="False" src="DryIocApp.iOS/Info_Universal.plist.xml" />
+				<File name="Entitlements.plist" AddStandardHeader="False" src="DryIocApp.iOS/Entitlements.plist.xml" />
+				<File name="Main.cs" AddStandardHeader="True" src="DryIocApp.iOS/Main.cs" />
+				<File name="AppDelegate.cs" AddStandardHeader="True" src="DryIocApp.iOS/AppDelegate.cs" />
 			
 			</Files>
 			<Packages>
@@ -115,7 +116,8 @@
 				<Package ID="Xamarin.TestCloud.Agent" Version="0.20.7" if="CreateUITestProject"/>
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
+				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -133,41 +135,42 @@
 				<Reference type="Project" refto="${ProjectName}"/>
 			</References>
 			<Files>
-				<File name="MainActivity.cs" src="UnityApp.Droid/MainActivity.cs" />
+				<File name="MainActivity.cs" src="DryIocApp.Droid/MainActivity.cs" />
 				<Directory name="Resources">
-					<File name="Resource.designer.cs" src="UnityApp.Droid/Resource.cs" />
-					<RawFile name="AboutResources.txt" src="UnityApp.Droid/AboutResources.txt" />
+					<File name="Resource.designer.cs" src="DryIocApp.Droid/Resource.cs" />
+					<RawFile name="AboutResources.txt" src="DryIocApp.Droid/AboutResources.txt" />
 					<Directory name="layout">
 					</Directory>
 					<Directory name="values">
 					</Directory>
 					<Directory name ="drawable">
-						<RawFile name="icon.png" src="UnityApp.Droid/icondrawable.png" />
+						<RawFile name="icon.png" src="DryIocApp.Droid/icondrawable.png" />
 					</Directory>
 					<Directory name ="drawable-hdpi">
-						<RawFile name="icon.png" src="UnityApp.Droid/icondrawablehdpi.png" />
+						<RawFile name="icon.png" src="DryIocApp.Droid/icondrawablehdpi.png" />
 					</Directory>
 					<Directory name ="drawable-xhdpi">
-						<RawFile name="icon.png" src="UnityApp.Droid/icondrawablexhdpi.png" />
+						<RawFile name="icon.png" src="DryIocApp.Droid/icondrawablexhdpi.png" />
 					</Directory>
 					<Directory name ="drawable-xxhdpi">
-						<RawFile name="icon.png" src="UnityApp.Droid/icondrawablexxhdpi.png" />
+						<RawFile name="icon.png" src="DryIocApp.Droid/icondrawablexxhdpi.png" />
 					</Directory>
 				</Directory>
 				<Directory name="Properties">
-					<File name="AssemblyInfo.cs" src="UnityApp.Droid/AssemblyInfo.cs" />
-					<File name="AndroidManifest.xml" AddStandardHeader="False" src="UnityApp.Droid/AndroidManifest.xml" BuildAction="None" />
+					<File name="AssemblyInfo.cs" src="DryIocApp.Droid/AssemblyInfo.cs" />
+					<File name="AndroidManifest.xml" AddStandardHeader="False" src="DryIocApp.Droid/AndroidManifest.xml" BuildAction="None" />
 				</Directory>
 				<Directory name="Assets">
-					<RawFile name="AboutAssets.txt" src="UnityApp.Droid/AboutAssets.txt" BuildAction="None" />
+					<RawFile name="AboutAssets.txt" src="DryIocApp.Droid/AboutAssets.txt" BuildAction="None" />
 				</Directory>
 			</Files>
 			<Packages>
 				<Package Id="Xamarin.Android.Support.v4" Version="23.3.0" />
-				<Package Id="Xamarin.Forms" Version="2.3.1.114"/> 
+				<Package Id="Xamarin.Forms" Version="2.3.4.270"/> 
 				<Package Id="Prism.Core" Version="6.3.0"/>
 				<Package Id="Prism.Forms" Version="6.3.0"/>
-				<Package Id="Prism.Unity.Forms" Version="6.3.0"/>
+				<Package Id="Prism.DryIoc.Forms" Version="6.3.0.1"/>
+				<Package Id="DryIoc.dll" Version="2.11.6" />
 			</Packages>
 		</Project>
 
@@ -181,10 +184,10 @@
 			</References>
 
 			<Files>
-				<File name="Tests.cs" src="UnityApp.UITests/UITests.AppProject.cs" if = "CreateCrossPlatformUITest" />
-				<File name="Tests.cs" src="UnityApp.UITests/UITests.AppProject.Android.cs" if = "CreateAndroidUITest" />
-				<File name="Tests.cs" src="UnityApp.UITests/UITests.AppProject.iOS.cs" if = "CreateiOSUITest" />
-				<File name="AppInitializer.cs" src="UnityApp.UITests/AppInitializer.AppProject.cs" if = "CreateCrossPlatformUITest" />
+				<File name="Tests.cs" src="DryIocApp.UITests/UITests.AppProject.cs" if = "CreateCrossPlatformUITest" />
+				<File name="Tests.cs" src="DryIocApp.UITests/UITests.AppProject.Android.cs" if = "CreateAndroidUITest" />
+				<File name="Tests.cs" src="DryIocApp.UITests/UITests.AppProject.iOS.cs" if = "CreateiOSUITest" />
+				<File name="AppInitializer.cs" src="DryIocApp.UITests/AppInitializer.AppProject.cs" if = "CreateCrossPlatformUITest" />
 			</Files>
 
 			<Packages>
