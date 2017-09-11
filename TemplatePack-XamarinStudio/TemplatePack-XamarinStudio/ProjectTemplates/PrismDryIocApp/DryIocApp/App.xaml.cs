@@ -1,4 +1,9 @@
-﻿using Prism.Unity;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using DryIoc;
+using Prism.DryIoc;
 using ${Namespace}.Views;
 
 namespace ${Namespace}

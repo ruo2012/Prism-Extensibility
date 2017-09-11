@@ -8,8 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using Prism.Unity;
-using Microsoft.Practices.Unity;
+using Prism.DryIoc;
+using DryIoc;
 
 namespace ${Namespace}
 {
@@ -28,7 +28,7 @@ namespace ${Namespace}
 
 	public class AndroidInitializer : IPlatformInitializer
     {
-        public void RegisterTypes(IUnityContainer container)
+        public void RegisterTypes(IContainer container)
         {
 
         }
