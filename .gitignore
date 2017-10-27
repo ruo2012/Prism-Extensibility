@@ -158,7 +158,7 @@ PublishScripts/
 !TemplatePack/TemplatePack/Packages/*
 !TemplatePack/TemplatePack/Packages/Prism/*
 !TemplatePack/TemplatePack/Packages/Containers/*
-!TemplatePack/TemplatePack/Packages/Xamarin/*
+!TemplatePack/TemplatePack/Templates/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed

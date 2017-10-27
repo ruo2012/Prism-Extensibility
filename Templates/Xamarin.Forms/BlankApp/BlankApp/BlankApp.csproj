@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageTargetFallback>portable-net45+win8+wpa81+wp8</PackageTargetFallback>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.282" />
+    <PackageReference Condition=" '$(Container)' == 'Autofac' " Include="Prism.Autofac.Forms" Version="7.0.0.168-pre" />
+    <PackageReference Condition=" '$(Container)' == 'DryIoc' " Include="Prism.DryIoc.Forms" Version="7.0.0.168-pre" />
+    <PackageReference Condition=" '$(Container)' == 'Ninject' " Include="Prism.Ninject.Forms" Version="7.0.0.168-pre" />
+    <PackageReference Condition=" '$(Container)' == 'Unity' " Include="Prism.Unity.Forms" Version="7.0.0.168-pre" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
+  </ItemGroup>
+
+</Project>
