@@ -14,5 +14,6 @@
   </metadata>
   <files>
     <file src="BlankApp/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
+    <file src="Module.XF/**" exclude="**\.vs\**\*;**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
   </files>
 </package>

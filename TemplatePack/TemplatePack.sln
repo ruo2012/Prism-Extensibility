@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankApp.XF", "ProjectTempl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankApp.Wpf", "ProjectTemplates\CSharp\Wpf\BlankApp.Wpf\BlankApp.Wpf.csproj", "{EA68A0EB-4A83-4548-9997-2C49E5592AE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.XF", "ProjectTemplates\CSharp\Xamarin.Forms\Module.XF\Module.XF.csproj", "{53699E01-013F-4A65-BEAF-54470F76FC3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{EA68A0EB-4A83-4548-9997-2C49E5592AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA68A0EB-4A83-4548-9997-2C49E5592AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA68A0EB-4A83-4548-9997-2C49E5592AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53699E01-013F-4A65-BEAF-54470F76FC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53699E01-013F-4A65-BEAF-54470F76FC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53699E01-013F-4A65-BEAF-54470F76FC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53699E01-013F-4A65-BEAF-54470F76FC3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{3AAA9FB8-90B1-4FAE-BCA8-16CAE596C500} = {93F353F6-DC7E-4ADC-A307-D812DC7594FA}
 		{41A431A7-776D-4287-BD39-2E336464A58E} = {3AAA9FB8-90B1-4FAE-BCA8-16CAE596C500}
 		{EA68A0EB-4A83-4548-9997-2C49E5592AE9} = {D9B82372-CF98-45DA-97E9-7C84F70EA440}
+		{53699E01-013F-4A65-BEAF-54470F76FC3E} = {3AAA9FB8-90B1-4FAE-BCA8-16CAE596C500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E7D8389-15C4-4A42-A3AE-8712A1925921}
