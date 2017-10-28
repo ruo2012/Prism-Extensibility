@@ -5,7 +5,7 @@
   "name": "Prism Blank App (Xamarin.Forms)",
   "identity": "Prism.Xamarin.Forms.Blank.CSharp", // Unique name for this template
   "groupIdentity": "Prism.Xamarin.Forms.Blank",
-  "shortName": "prismblank", // Short name that can be used on the cli
+  "shortName": "xf-blank", // Short name that can be used on the cli
   "tags": {
     "language": "C#",
     "type": "project"
@@ -13,10 +13,10 @@
   "sourceName": "BlankApp",
   "preferNameDirectory": true,
   "guids": [
-    "B80C9171-0389-4969-A1E4-94E40123629D", // .NET Standard Library
-    "BC154214-001D-4B85-8AA2-7CBD0F507711", // Android
-    "491F6EF0-0A57-4AF5-AC8E-6D8A9AFA8200", // iOS
-    "DF98064D-BFE1-424B-8CA8-0B8D4D321F48" // UWP
+    "{B80C9171-0389-4969-A1E4-94E40123629D}", // .NET Standard Library
+    "{BC154214-001D-4B85-8AA2-7CBD0F507711}", // Android
+    "{491F6EF0-0A57-4AF5-AC8E-6D8A9AFA8200}", // iOS
+    "{DF98064D-BFE1-424B-8CA8-0B8D4D321F48}" // UWP
   ],
   "symbols": {
     "CreateAndroidProject": {

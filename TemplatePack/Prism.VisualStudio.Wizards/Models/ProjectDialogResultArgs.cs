@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Prism.VisualStudio.Wizards.Xamarin.Models
+namespace Prism.VisualStudio.Wizards.Models
 {
     public class ProjectDialogResultEventArgs : EventArgs
     {

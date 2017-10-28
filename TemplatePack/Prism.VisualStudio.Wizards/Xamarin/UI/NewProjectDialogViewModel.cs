@@ -1,11 +1,9 @@
 ﻿using Prism.VisualStudio.Wizards.Core;
-using Prism.VisualStudio.Wizards.Xamarin.Models;
-using System;
-using System.Windows.Input;
+using Prism.VisualStudio.Wizards.Models;
 
 namespace Prism.VisualStudio.Wizards.Xamarin.UI
 {
-    public class NewProjectDialogViewModel : BindableBase
+    internal class NewProjectDialogViewModel : ViewModelBase
     {
         private bool _createAndroid;
         public bool CreateAndroid
@@ -28,61 +26,28 @@ namespace Prism.VisualStudio.Wizards.Xamarin.UI
             set { SetProperty(ref _createUwp, value); }
         }
 
-        Array _containers;
-        public Array Containers
+        public NewProjectDialogViewModel() : base()
         {
-            get { return _containers; }
-            set { SetProperty(ref _containers, value); }
-        }
-
-        private ContainerType _selectedContainer;
-
-        public ContainerType SelectedContainer
-        {
-            get { return _selectedContainer; }
-            set { _selectedContainer = value; }
-        }
-
-        ICommand _createProjectCommand;
-        public ICommand CreateProjectCommand => 
-            _createProjectCommand ?? (_createProjectCommand = new DelegateCommand(CreateProject, CanCreateProject));
-
-        public EventHandler<ProjectDialogResultEventArgs> ProjectCreated;
-
-        public NewProjectDialogViewModel()
-        {
-            Containers = Enum.GetValues(typeof(ContainerType));
-
-            SelectedContainer = RegistryHelper.GetValue(nameof(SelectedContainer), ContainerType.DryIoc);
             CreateAndroid = RegistryHelper.GetValue(nameof(CreateAndroid), true);
             CreateiOS = RegistryHelper.GetValue(nameof(CreateiOS), true);
             CreateUwp = RegistryHelper.GetValue(nameof(CreateUwp), true);
         }
 
-        private void CreateProject()
+        protected override void CreateProject()
         {
+            base.CreateProject();
+
             RegistryHelper.WriteValue(nameof(CreateAndroid), CreateAndroid);
             RegistryHelper.WriteValue(nameof(CreateiOS), CreateiOS);
             RegistryHelper.WriteValue(nameof(CreateUwp), CreateUwp);
-            RegistryHelper.WriteValue(nameof(SelectedContainer), SelectedContainer);
 
             var result = new ProjectDialogResult(CreateAndroid, CreateiOS, CreateUwp, SelectedContainer);
             RaiseCreateProject(new ProjectDialogResultEventArgs(result));
         }
 
-        private bool CanCreateProject()
+        protected override bool CanCreateProject()
         {
             return CreateAndroid || CreateiOS || CreateUwp;
-        }
-
-        void RaiseCreateProject(ProjectDialogResultEventArgs e)
-        {
-            OnProjectCreated(e);
-        }
-
-        protected virtual void OnProjectCreated(ProjectDialogResultEventArgs e)
-        {
-            ProjectCreated?.Invoke(this, e);
         }
     }
 }

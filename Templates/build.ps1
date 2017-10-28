@@ -7,10 +7,11 @@ if (!(Test-Path $nugetFileName))
     Invoke-WebRequest -Uri "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -OutFile $nugetFileName
 }
 
-$nuspecPath = 'Xamarin.Forms\Prism.Xamarin.Forms.Templates.nuspec'
+$wpfNuspecPath = 'Wpf\Prism.Wpf.Templates.nuspec'
+$xfNuspecPath = 'Xamarin.Forms\Prism.Xamarin.Forms.Templates.nuspec'
 
-Write-Host "NuSpec: $nuspecPath"
+Invoke-Expression ".\$($nugetFileName) pack $($wpfNuspecPath) -OutputDirectory $nugetOutputDirectory" 
 
-Invoke-Expression ".\$($nugetFileName) pack $($nuspecPath) -OutputDirectory $nugetOutputDirectory" 
+Invoke-Expression ".\$($nugetFileName) pack $($xfNuspecPath) -OutputDirectory $nugetOutputDirectory" 
 
 Read-Host -Prompt "Press Enter to exit"

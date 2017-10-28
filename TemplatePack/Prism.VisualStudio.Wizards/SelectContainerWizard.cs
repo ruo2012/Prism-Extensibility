@@ -1,12 +1,12 @@
-﻿using EnvDTE;
-using Microsoft.VisualStudio.TemplateWizard;
-using Prism.VisualStudio.Wizards.Xamarin.UI;
+﻿using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
+using EnvDTE;
+using Prism.VisualStudio.Wizards.UI;
 using System.IO;
 
-namespace Prism.VisualStudio.Wizards.Xamarin
+namespace Prism.VisualStudio.Wizards
 {
-    public class ProjectWizard : IWizard
+    public class SelectContainerWizard : IWizard
     {
         public void BeforeOpeningFile(ProjectItem projectItem) { }
 
@@ -20,16 +20,13 @@ namespace Prism.VisualStudio.Wizards.Xamarin
         {
             try
             {
-                NewProjectDialog dialog = new NewProjectDialog();
+                var dialog = new SelectContainerDialog();
                 dialog.ShowDialog();
                 var dialogResult = dialog.Result;
 
                 if (dialogResult.Cancelled)
                     throw new WizardBackoutException();
 
-                replacementsDictionary.Add("passthrough:CreateAndroidProject", dialogResult.CreateAndroid.ToString());
-                replacementsDictionary.Add("passthrough:CreateiOSProject", dialogResult.CreateiOS.ToString());
-                replacementsDictionary.Add("passthrough:CreateUWPProject", dialogResult.CreateUwp.ToString());
                 replacementsDictionary.Add("passthrough:Container", dialogResult.ContainerType.ToString());
             }
             catch
