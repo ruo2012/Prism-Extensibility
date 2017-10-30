@@ -11,10 +11,17 @@
     <DefaultName>PrismUserControl.xaml</DefaultName>
     <SortOrder>20</SortOrder>
   </TemplateData>
-  <TemplateContent>
-    
+  <TemplateContent>    
     <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">PrismUserControl.xaml</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">PrismUserControl.xaml.cs</ProjectItem>
-    
+    <CustomParameters>
+      <CustomParameter Name = "$platform$" Value="wpf" />
+    </CustomParameters>
   </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>Prism.VisualStudio.Wizards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a733e2c14bc2eb81</Assembly>
+    <FullClassName>Prism.VisualStudio.Wizards.CreateViewModelForViewWizard</FullClassName>
+  </WizardExtension>
+  
 </VSTemplate>

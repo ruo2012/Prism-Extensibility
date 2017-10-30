@@ -12,6 +12,11 @@ namespace Prism.VisualStudio.Wizards
         string _viewName;
         string _viewModelName;
         string _templatesDirectory;
+        string _rootNamespace;
+        string _platform;
+
+        readonly string ViewFolderName = "Views";
+        readonly string ViewModelFolderName = "ViewModels";
 
         public void BeforeOpeningFile(ProjectItem projectItem)
         {
@@ -30,34 +35,43 @@ namespace Prism.VisualStudio.Wizards
 
         public void RunFinished()
         {
-            string templatePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(_templatesDirectory.Replace("Xamarin.Forms", "Code")), "PrismViewModel.zip\\PrismViewModel.vstemplate");
+            if (!_rootNamespace.Contains(ViewFolderName))
+                return;
+
+            var templateSubDirectoryReplaceKey = _platform.Equals("xf") ? "Xamarin.Forms" : "WPF";
+            string templatePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(_templatesDirectory.Replace(templateSubDirectoryReplaceKey, "Code")), "PrismViewModel.zip\\PrismViewModel.vstemplate");
 
             Array activeProjects = (Array)_dte.ActiveSolutionProjects;
             Project activeProject = (Project)activeProjects.GetValue(0);
 
             foreach(ProjectItem item in activeProject.ProjectItems)
             {
-                if (item.Name == "ViewModels" && item.Kind == Constants.vsProjectItemKindPhysicalFolder)
+                if (item.Name == ViewModelFolderName && item.Kind == Constants.vsProjectItemKindPhysicalFolder)
                 {
                     item.ProjectItems.AddFromTemplate(templatePath, $"{_viewModelName}.cs");
                 }
 
-                if (item.Name == "App.xaml")
+                if (_platform.Equals("xf"))
                 {
-                    ProjectItem appXamlCS = item.ProjectItems.Item(1);
-                    EditAppRegisterTypesForNavigation(appXamlCS.FileCodeModel.CodeElements);
-                }
+                    if (item.Name == "App.xaml")
+                    {
+                        ProjectItem appXamlCS = item.ProjectItems.Item(1);
+                        EditAppRegisterTypesForNavigation(appXamlCS.FileCodeModel.CodeElements);
+                    }
 
-                if (item.Name =="App.cs")
-                {
-                    EditAppRegisterTypesForNavigation(item.FileCodeModel.CodeElements);
-                }
+                    if (item.Name == "App.cs")
+                    {
+                        EditAppRegisterTypesForNavigation(item.FileCodeModel.CodeElements);
+                    }
+                }                    
             }
         }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
             _dte = automationObject as EnvDTE.DTE;
+            _platform = replacementsDictionary["$platform$"];
+            _rootNamespace = replacementsDictionary["$rootnamespace$"];
             _viewName = replacementsDictionary["$safeitemname$"];
             _viewModelName = $"{_viewName}ViewModel";
             _templatesDirectory = Path.GetDirectoryName(customParams[0] as string);
