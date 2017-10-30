@@ -16,6 +16,11 @@
     "{99C9E82C-C594-446D-AA59-8FFBC43AD226}" // Wpf
   ],
   "symbols": {
+    "TargetFrameworkVersion": {
+      "type": "parameter",
+      "defaultValue": "4.5.2",
+      "replaces": "$targetframeworkversion$"
+    },
     "Container": {
       "type": "parameter",
       "dataType": "choice",

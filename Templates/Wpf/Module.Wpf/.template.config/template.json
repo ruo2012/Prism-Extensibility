@@ -16,6 +16,11 @@
     "{AB8B448C-DD74-4D60-A041-3E5D03A32180}" // Module
   ],
   "symbols": {
+    "TargetFrameworkVersion": {
+      "type": "parameter",
+      "defaultValue": "4.5.2",
+      "replaces": "$targetframeworkversion$"
+    },
     "Container": {
       "type": "parameter",
       "dataType": "choice",

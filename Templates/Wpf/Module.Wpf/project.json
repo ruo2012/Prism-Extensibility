@@ -13,10 +13,10 @@
     //    "Prism.Unity": "6.3.0"
     ////#endif
   },
-"frameworks": {
-"net452": {}
-},
-"runtimes": {
-"win": {}
-}
+  "frameworks": {
+    "net$targetframeworkversion$": {}
+  },
+  "runtimes": {
+    "win": {}
+  }
 }

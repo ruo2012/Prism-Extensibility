@@ -14,7 +14,7 @@
     ////#endif
   },
   "frameworks": {
-    "net452": {}
+    "net$targetframeworkversion$": {}
   },
   "runtimes": {
     "win": {}

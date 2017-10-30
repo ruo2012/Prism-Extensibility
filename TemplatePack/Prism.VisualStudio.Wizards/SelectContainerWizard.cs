@@ -28,6 +28,7 @@ namespace Prism.VisualStudio.Wizards
                     throw new WizardBackoutException();
 
                 replacementsDictionary.Add("passthrough:Container", dialogResult.ContainerType.ToString());
+                replacementsDictionary.Add("passthrough:TargetFrameworkVersion", replacementsDictionary["$targetframeworkversion$"]);
             }
             catch
             {
