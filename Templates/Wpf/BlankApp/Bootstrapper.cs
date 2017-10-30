@@ -1,5 +1,6 @@
 ﻿using BlankApp.Views;
 using System.Windows;
+using Prism.Modularity;
 #if (AutofacContainer)
 using Autofac;
 using Prism.Autofac;
@@ -44,6 +45,12 @@ namespace BlankApp
         protected override void InitializeShell()
         {
             Application.Current.MainWindow.Show();
+        }
+
+        protected override void ConfigureModuleCatalog()
+        {
+            var moduleCatalog = (ModuleCatalog)ModuleCatalog;
+            //moduleCatalog.AddModule(typeof(YOUR_MODULE));
         }
     }
 }

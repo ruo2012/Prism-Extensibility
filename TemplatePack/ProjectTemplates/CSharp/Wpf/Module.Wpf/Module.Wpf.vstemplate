@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <TemplateID>Prism.Xamarin.Forms.Module.CSharp</TemplateID>
-    <Name>Prism Module (Xamarin.Forms)</Name>
-    <Description>A project template for adding a Prism module to your Xamarin.Forms app.</Description>
-    <Icon>Module.XF.ico</Icon>
+    <TemplateID>Prism.Wpf.Module.CSharp</TemplateID>
+    <Name>Prism Module (WPF)</Name>
+    <Description>A project template for adding a Prism module to your WPF app.</Description>
+    <Icon>Module.Wpf.ico</Icon>
     <ProjectType>CSharp</ProjectType>
     <ProvideDefaultName>true</ProvideDefaultName>
     <DefaultName>Module</DefaultName>
@@ -17,7 +17,7 @@
     <CustomParameters>
       <CustomParameter Name = "$language$" Value="CSharp" />
       <CustomParameter Name = "$uistyle$" Value="none"/>
-      <CustomParameter Name = "$groupid$" Value="Prism.Xamarin.Forms.Module" />
+      <CustomParameter Name = "$groupid$" Value="Prism.Wpf.Module" />
     </CustomParameters>
   </TemplateContent>
 

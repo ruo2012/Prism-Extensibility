@@ -32,7 +32,7 @@ namespace Module.XF
             builder.RegisterTypeForNavigation<ViewA, ViewAViewModel>();
         }
 #elseif (DryIocContainer)
-        private IContainer _container { get; }
+        private IContainer _container;
 
         public ModuleName(IContainer container)
         {
@@ -44,7 +44,7 @@ namespace Module.XF
             _container.RegisterTypeForNavigation<ViewA, ViewAViewModel>();
         }
 #elseif (NinjectContainer)
-        private IKernel _kernel { get; }
+        private IKernel _kernel;
 
         public ModuleName(IKernel kernel)
         {
@@ -56,7 +56,7 @@ namespace Module.XF
             _kernel.RegisterTypeForNavigation<ViewA, ViewAViewModel>();
         }
 #elseif (UnityContainer)
-        private IUnityContainer _container { get; }
+        private IUnityContainer _container;
 
         public ModuleName(IUnityContainer container)
         {

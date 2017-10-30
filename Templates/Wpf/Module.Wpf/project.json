@@ -1,0 +1,22 @@
+﻿{
+  "dependencies": {
+    ////#if (AutofacContainer)
+    //    "Prism.Autofac": "6.3.0"
+    ////#endif
+    ////#if (DryIocContainer)
+    //    "Prism.DryIoc": "6.3.0"
+    ////#endif
+    ////#if (NinjectContainer)
+    //    "Prism.Ninject": "6.3.0"
+    ////#endif
+    ////#if (UnityContainer)
+    //    "Prism.Unity": "6.3.0"
+    ////#endif
+  },
+"frameworks": {
+"net452": {}
+},
+"runtimes": {
+"win": {}
+}
+}
