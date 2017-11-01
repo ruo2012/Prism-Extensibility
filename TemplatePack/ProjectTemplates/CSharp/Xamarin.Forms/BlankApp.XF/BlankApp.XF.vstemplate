@@ -31,9 +31,4 @@
     <FullClassName>Microsoft.VisualStudio.TemplateEngine.Wizard.TemplateEngineWizard</FullClassName>
   </WizardExtension>
 
-  <WizardExtension>
-    <Assembly>Prism.VisualStudio.Wizards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a733e2c14bc2eb81</Assembly>
-    <FullClassName>Prism.VisualStudio.Wizards.Xamarin.AndroidTargetsImportWizard</FullClassName>
-  </WizardExtension>
-
 </VSTemplate>
