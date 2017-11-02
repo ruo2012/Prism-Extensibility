@@ -4,9 +4,9 @@
   <CodeSnippet Format="1.0.0">
     <Header>
       <Title>Prism DelegateCommand</Title>
-      <Shortcut>cmd</Shortcut>
+      <Shortcut>cmdfull</Shortcut>
       <Author>Brian Lagunas</Author>
-      <Description>Creates a DelegateCommand property with an Execute method</Description>
+      <Description>Creates a DelegateCommand property with Execute and CanExecute methods.</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
@@ -27,11 +27,16 @@
       <Code Language="csharp">
         <![CDATA[private DelegateCommand $fieldName$;
         public DelegateCommand $CommandName$ => 
-            $fieldName$ ?? ($fieldName$ = new DelegateCommand(Execute$CommandName$));
+            $fieldName$ ?? ($fieldName$ = new DelegateCommand(Execute$CommandName$, CanExecute$CommandName$));
             
         void Execute$CommandName$()
         {
             $end$
+        }
+        
+        bool CanExecute$CommandName$()
+        {
+            return true;
         }]]>
       </Code>
     </Snippet>

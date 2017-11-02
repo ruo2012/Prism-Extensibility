@@ -4,9 +4,9 @@
   <CodeSnippet Format="1.0.0">
     <Header>
       <Title>Prism DelegateCommand Generic</Title>
-      <Shortcut>cmdg</Shortcut>
+      <Shortcut>cmdgfull</Shortcut>
       <Author>Brian Lagunas</Author>
-      <Description>Creates a generic DelegateCommand&lt;T&gt; property with an Execute method</Description>
+      <Description>Creates a generic DelegateCommand&lt;T&gt; property with Execute and CanExecute methods.</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
@@ -37,11 +37,16 @@
       <Code Language="csharp">
         <![CDATA[private DelegateCommand<$parameterType$> $fieldName$;
         public DelegateCommand<$parameterType$> $CommandName$ => 
-            $fieldName$ ?? ($fieldName$ = new DelegateCommand<$parameterType$>(Execute$CommandName$));            
+            $fieldName$ ?? ($fieldName$ = new DelegateCommand<$parameterType$>(Execute$CommandName$, CanExecute$CommandName$));            
             
         void Execute$CommandName$($parameterType$ $parameterName$)
         {
             $end$
+        }
+        
+        bool CanExecute$CommandName$($parameterType$ $parameterName$)
+        {
+            return true;
         }]]>
       </Code>
     </Snippet>
