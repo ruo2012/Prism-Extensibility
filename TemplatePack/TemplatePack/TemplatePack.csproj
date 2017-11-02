@@ -74,8 +74,12 @@
     <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandGeneric.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandFull.snippet" />
-    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandGenericFull.snippet" />
+    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandFull.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandGenericFull.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
