@@ -64,17 +64,9 @@
     <Content Include="Snippets\CSharp\Prism\PrismProperty.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="snippets.pkgdef">
+    <Content Include="TemplatePack.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Packages\Containers\commonservicelocator.1.3.0.nupkg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Containers\unity.4.0.1.nupkg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Snippets\CSharp\Prism\PrismPropertyCommand.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -82,87 +74,23 @@
     <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandGeneric.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Containers\portable.ninject.3.3.1.nupkg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandFull.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Containers\ninject.3.2.2.nupkg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Containers\autofac.3.5.2.nupkg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Autofac.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Autofac.Forms.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Core.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Forms.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Ninject.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Ninject.Forms.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.StructureMap.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Unity.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Unity.Forms.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.Wpf.6.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.Animated.Vector.Drawable.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.Design.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.v4.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.v7.AppCompat.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.v7.CardView.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.v7.MediaRouter.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.v7.RecyclerView.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Android.Support.Vector.Drawable.23.3.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Xamarin\Xamarin.Forms.2.3.3.193.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Containers\dryioc.dll.2.10.1.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Containers\structuremap.4.4.0.nupkg">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Packages\Prism\Prism.DryIoc.Forms.6.3.0.1.nupkg">
+    <Content Include="Snippets\CSharp\Prism\PrismPropertyCommandGenericFull.snippet">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Templates\Prism.Xamarin.Forms.Templates.1.0.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Templates\Prism.Wpf.Templates.1.0.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -222,78 +150,39 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Forms\PrismAutofacApp\PrismAutofacApp.csproj">
-      <Project>{C57FE2D4-A5F1-4123-A96D-C475F2DA495C}</Project>
-      <Name>PrismAutofacApp</Name>
+    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\BlankApp.Wpf\BlankApp.Wpf.csproj">
+      <Project>{EA68A0EB-4A83-4548-9997-2C49E5592AE9}</Project>
+      <Name>BlankApp.Wpf</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Forms\PrismDryIocApp\PrismDryIocApp.csproj">
-      <Project>{2C8AFFAF-BF25-4EB7-AF28-A5CEB60651CB}</Project>
-      <Name>PrismDryIocApp</Name>
+    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\Module.Wpf\Module.Wpf.csproj">
+      <Project>{91484A4B-DD13-46CD-84FE-C4DE0AE0D2FE}</Project>
+      <Name>Module.Wpf</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Forms\PrismNinjectApp\PrismNinjectApp.csproj">
-      <Project>{38B9D93C-5401-4883-8276-E4CB7B451DFF}</Project>
-      <Name>PrismNinjectApp</Name>
+    <ProjectReference Include="..\ProjectTemplates\CSharp\Xamarin.Forms\BlankApp.XF\BlankApp.XF.csproj">
+      <Project>{41A431A7-776D-4287-BD39-2E336464A58E}</Project>
+      <Name>BlankApp.XF</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Forms\PrismUnityApp\PrismUnityApp.csproj">
-      <Project>{A999803B-13A8-42FA-935A-EB5BD81C5F4D}</Project>
-      <Name>PrismUnityApp</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\PrismAutofacApp\PrismAutofacApp.Wpf.csproj">
-      <Project>{83290E0A-3ABB-45FC-8CD1-05B9C27F96B7}</Project>
-      <Name>PrismAutofacApp.Wpf</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\PrismModule\PrismModule.csproj">
-      <Project>{0487b548-c845-4cc4-8f82-8932cfc92e1f}</Project>
-      <Name>PrismModule</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\PrismNinjectApp\PrismNinjectApp.Wpf.csproj">
-      <Project>{0AA64846-8F3F-4C49-AE7E-2F2111ED510A}</Project>
-      <Name>PrismNinjectApp.Wpf</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\PrismStructureMapApp\PrismStructureMapApp.Wpf.csproj">
-      <Project>{E8F45268-CAC0-4F69-A02E-8E3DEB93531C}</Project>
-      <Name>PrismStructureMapApp.Wpf</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjectTemplates\CSharp\Wpf\PrismUnityApp\PrismUnityApp.Wpf.csproj">
-      <Project>{9DAE43F7-77D4-4191-BEAC-40EACFD9C20C}</Project>
-      <Name>PrismUnityApp.Wpf</Name>
-      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
-    <ProjectReference Include="..\VsWizards\Prism.VisualStudio.Wizards.Design\Prism.VisualStudio.Wizards.Design.csproj">
-      <Project>{b237635b-1151-479f-a422-231d93037745}</Project>
-      <Name>Prism.VisualStudio.Wizards.Design</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VsWizards\Prism.VisualStudio.Wizards\Prism.VisualStudio.Wizards.csproj">
+    <ProjectReference Include="..\Prism.VisualStudio.Wizards\Prism.VisualStudio.Wizards.csproj">
       <Project>{CF820A3D-4BD3-4A92-B951-D35F3AFD6AA9}</Project>
       <Name>Prism.VisualStudio.Wizards</Name>
       <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
       <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectTemplates\CSharp\Xamarin.Forms\Module.XF\Module.XF.csproj">
+      <Project>{53699E01-013F-4A65-BEAF-54470F76FC3E}</Project>
+      <Name>Module.XF</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

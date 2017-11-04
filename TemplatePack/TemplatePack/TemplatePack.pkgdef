@@ -1,0 +1,7 @@
+﻿//dotnet Templates
+[$RootKey$\TemplateEngine\Templates\Prism]
+"InstalledPath"="$PackageFolder$\Templates"
+
+// C# Snippets
+[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
+"Prism"="$PackageFolder$\Snippets\CSharp\Prism\"

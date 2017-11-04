@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Prism DelegateCommand Generic</Title>
+      <Shortcut>cmdgfull</Shortcut>
+      <Author>Brian Lagunas</Author>
+      <Description>Creates a generic DelegateCommand&lt;T&gt; property with Execute and CanExecute methods.</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>parameterType</ID>
+          <ToolTip>Type of the DelegateCommand's parameter</ToolTip>
+          <Default>string</Default>
+        </Literal>
+        <Literal>
+          <ID>fieldName</ID>
+          <ToolTip>Name of the backing field holding the DelegateCommand</ToolTip>
+          <Default>_fieldName</Default>
+        </Literal>
+        <Literal>
+          <ID>CommandName</ID>
+          <ToolTip>Name of the DelegateCommand</ToolTip>
+          <Default>CommandName</Default>
+        </Literal>
+        <Literal>
+          <ID>parameterName</ID>
+          <ToolTip>The parameter name of the Execute and CanExecute methods</ToolTip>
+          <Default>parameter</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private DelegateCommand<$parameterType$> $fieldName$;
+        public DelegateCommand<$parameterType$> $CommandName$ => 
+            $fieldName$ ?? ($fieldName$ = new DelegateCommand<$parameterType$>(Execute$CommandName$, CanExecute$CommandName$));            
+            
+        void Execute$CommandName$($parameterType$ $parameterName$)
+        {
+            $end$
+        }
+        
+        bool CanExecute$CommandName$($parameterType$ $parameterName$)
+        {
+            return true;
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

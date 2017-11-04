@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Brian Lagunas",
+  "classifications": [ "Prism", "Wpf" ],
+  "name": "Prism Module (WPF)",
+  "identity": "Prism.Wpf.CSharp", // Unique name for this template
+  "groupIdentity": "Prism.Wpf.Module",
+  "shortName": "wpf-module", // Short name that can be used on the cli
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Module.Wpf",
+  "preferNameDirectory": true,
+  "guids": [
+    "{AB8B448C-DD74-4D60-A041-3E5D03A32180}" // Module
+  ],
+  "symbols": {
+    "TargetFrameworkVersion": {
+      "type": "parameter",
+      "defaultValue": "4.5.2",
+      "replaces": "$targetframeworkversion$"
+    },
+    "Container": {
+      "type": "parameter",
+      "dataType": "choice",
+      "defaultValue": "DryIoc",
+      "choices": [
+        {
+          "choice": "Autofac",
+          "description": "Uses Autofac as the Dependency Injection Container"
+        },
+        {
+          "choice": "DryIoc",
+          "description": "Uses DryIoc as the Dependency Injection Container"
+        },
+        {
+          "choice": "Ninject",
+          "description": "Uses Ninject as the Dependency Injection Container"
+        },
+        {
+          "choice": "Unity",
+          "description": "Uses Unity as the Dependency Injection Container"
+        }
+      ],
+      "description": "The Dependency Injection Container to use"
+    },
+    "AutofacContainer": {
+      "type": "computed",
+      "value": "(Container == \"Autofac\")"
+    },
+    "DryIocContainer": {
+      "type": "computed",
+      "value": "(Container == \"DryIoc\")"
+    },
+    "NinjectContainer": {
+      "type": "computed",
+      "value": "(Container == \"Ninject\")"
+    },
+    "UnityContainer": {
+      "type": "computed",
+      "value": "(Container == \"Unity\")"
+    },
+    "ModuleName": {
+      "type": "parameter",
+      "replaces": "ModuleName",
+      "fileRename": "ModuleName"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "Module.Wpf.csproj"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       <Title>Prism DelegateCommand Generic</Title>
       <Shortcut>cmdg</Shortcut>
       <Author>Brian Lagunas</Author>
-      <Description>Creates a generic DelegateCommand&lt;T&gt; property</Description>
+      <Description>Creates a generic DelegateCommand&lt;T&gt; property with an Execute method</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
@@ -15,24 +15,34 @@
       <Declarations>
         <Literal>
           <ID>parameterType</ID>
-          <ToolTip>Replace with the command's parameter type</ToolTip>
+          <ToolTip>Type of the DelegateCommand's parameter</ToolTip>
           <Default>string</Default>
         </Literal>
         <Literal>
           <ID>fieldName</ID>
-          <ToolTip>Replace with the field name</ToolTip>
-          <Default>fieldName</Default>
+          <ToolTip>Name of the backing field holding the DelegateCommand</ToolTip>
+          <Default>_fieldName</Default>
         </Literal>
         <Literal>
           <ID>CommandName</ID>
-          <ToolTip>Replace with the command name</ToolTip>
+          <ToolTip>Name of the DelegateCommand</ToolTip>
           <Default>CommandName</Default>
+        </Literal>
+        <Literal>
+          <ID>parameterName</ID>
+          <ToolTip>The parameter name of the Execute and CanExecute methods</ToolTip>
+          <Default>parameter</Default>
         </Literal>
       </Declarations>
       <Code Language="csharp">
-        <![CDATA[private DelegateCommand<$parameterType$> $fieldName$Command;
-        public DelegateCommand<$parameterType$> $CommandName$Command => 
-            $fieldName$Command ?? ($fieldName$Command = new DelegateCommand<$parameterType$>($CommandName$, Can$CommandName$));]]>
+        <![CDATA[private DelegateCommand<$parameterType$> $fieldName$;
+        public DelegateCommand<$parameterType$> $CommandName$ => 
+            $fieldName$ ?? ($fieldName$ = new DelegateCommand<$parameterType$>(Execute$CommandName$));            
+            
+        void Execute$CommandName$($parameterType$ $parameterName$)
+        {
+            $end$
+        }]]>
       </Code>
     </Snippet>
   </CodeSnippet>
