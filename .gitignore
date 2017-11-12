@@ -304,6 +304,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Windows executables
+*.exe
+
+
 # Windows shortcuts
 *.lnk
-Templates/nuget.exe

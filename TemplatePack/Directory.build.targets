@@ -1,0 +1,16 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="TemplatesNuGetPack" 
+          BeforeTargets="BeforeBuild"
+          Condition=" '$(IsTemplatePackProject)' ">
+
+    <PropertyGroup>
+      <PowerShellExe>powershell.exe</PowerShellExe>
+      <TemplatePackRoot>$(MSBuildProjectDirectory)</TemplatePackRoot>
+      <ScriptRoot>$(MSBuildProjectDirectory)\..\..\Templates</ScriptRoot>
+      <NuGetPackScript>$([System.IO.Path]::Combine('$(ScriptRoot)', 'build.ps1'))</NuGetPackScript>
+    </PropertyGroup>
+
+    <Exec Command="$(PowerShellExe) -NonInteractive -ExecutionPolicy Unrestricted -File &quot;$(NuGetPackScript)&quot; -TemplatePackRoot:&quot;$(TemplatePackRoot)&quot; -ScriptRoot:&quot;$(ScriptRoot)&quot;" />
+    
+  </Target>
+</Project>

@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>   
+    <IsTemplatePackProject>$(MSBuildProjectName.Contains('TemplatePack'))</IsTemplatePackProject>    
+  </PropertyGroup>
+</Project>
