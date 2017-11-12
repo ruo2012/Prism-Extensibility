@@ -18,8 +18,9 @@
   "symbols": {
     "TargetFrameworkVersion": {
       "type": "parameter",
-      "defaultValue": "4.5.2",
-      "replaces": "$targetframeworkversion$"
+      "datatype": "text",
+      "defaultValue": "v4.5.2",
+      "replaces": "$wizardtargetframeworkversion$"
     },
     "Container": {
       "type": "parameter",

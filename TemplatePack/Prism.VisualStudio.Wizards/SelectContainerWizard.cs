@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using EnvDTE;
 using Prism.VisualStudio.Wizards.UI;
 using System.IO;
+using System.Windows;
 
 namespace Prism.VisualStudio.Wizards
 {
@@ -28,7 +29,9 @@ namespace Prism.VisualStudio.Wizards
                     throw new WizardBackoutException();
 
                 replacementsDictionary.Add("passthrough:Container", dialogResult.ContainerType.ToString());
-                replacementsDictionary.Add("passthrough:TargetFrameworkVersion", replacementsDictionary["$targetframeworkversion$"]);
+                //Note: we must include the 'v' in the version number, or the wizard will remove all dots from the version when pased to the template
+                //causing a break for non-english versions of Visual Studio
+                replacementsDictionary.Add("passthrough:TargetFrameworkVersion", $"v{replacementsDictionary["$targetframeworkversion$"]}");
             }
             catch
             {

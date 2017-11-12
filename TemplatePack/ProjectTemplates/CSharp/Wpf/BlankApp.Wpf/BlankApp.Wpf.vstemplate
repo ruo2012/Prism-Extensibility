@@ -10,6 +10,8 @@
     <DefaultName>BlankApp</DefaultName>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <SortOrder>1</SortOrder>
+    <CreateInPlace>false</CreateInPlace>
+    <AppIdFilter>blend</AppIdFilter>
   </TemplateData>
   
   <TemplateContent>
