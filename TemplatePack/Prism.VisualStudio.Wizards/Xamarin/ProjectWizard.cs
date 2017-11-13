@@ -34,10 +34,10 @@ namespace Prism.VisualStudio.Wizards.Xamarin
             }
             catch
             {
-                var solutionDir = System.IO.Path.GetDirectoryName(replacementsDictionary["$destinationdirectory$"]);
+                string solutionDirectory = replacementsDictionary["$solutiondirectory$"];
 
-                if (Directory.Exists(solutionDir))
-                    Directory.Delete(solutionDir, true);
+                if (Directory.Exists(solutionDirectory))
+                    Directory.Delete(solutionDirectory, true);
 
                 throw;
             }

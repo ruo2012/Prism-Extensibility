@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using EnvDTE;
 using Prism.VisualStudio.Wizards.UI;
 using System.IO;
-using System.Windows;
 
 namespace Prism.VisualStudio.Wizards
 {
@@ -35,10 +34,22 @@ namespace Prism.VisualStudio.Wizards
             }
             catch
             {
-                var solutionDir = System.IO.Path.GetDirectoryName(replacementsDictionary["$destinationdirectory$"]);
+                string destinationDirectory = replacementsDictionary["$destinationdirectory$"];
+                string solutionDirectory = replacementsDictionary["$solutiondirectory$"];
 
-                if (Directory.Exists(solutionDir))
-                    Directory.Delete(solutionDir, true);
+                try
+                {
+                    if (Directory.Exists(destinationDirectory))
+                        Directory.Delete(destinationDirectory);
+                }
+                catch { /* If it fails (doesn't exist/contains files/read-only), let the directory stay. */ }
+
+                try
+                {
+                    if (Directory.Exists(solutionDirectory))
+                        Directory.Delete(solutionDirectory);
+                }
+                catch { /* If it fails (doesn't exist/contains files/read-only), let the directory stay. */ }
 
                 throw;
             }
