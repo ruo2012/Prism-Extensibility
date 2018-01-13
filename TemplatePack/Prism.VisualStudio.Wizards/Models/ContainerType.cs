@@ -4,7 +4,6 @@
     {
         Autofac,
         DryIoc,
-        Ninject,
         Unity
     }
 }

@@ -1,23 +1,18 @@
-﻿using BlankApp.ViewModels;
+﻿using Prism;
+using Prism.Ioc;
+using BlankApp.ViewModels;
 using BlankApp.Views;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 #if (AutofacContainer)
-using Autofac;
 using Prism.Autofac;
 #endif
 #if (DryIocContainer)
-using DryIoc;
 using Prism.DryIoc;
 #endif
-#if (NinjectContainer)
-using Ninject;
-using Prism.Ninject;
-#endif
 #if (UnityContainer)
-using Microsoft.Practices.Unity;
 using Prism.Unity;
 #endif
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace BlankApp
@@ -40,15 +35,10 @@ namespace BlankApp
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
-        protected override void RegisterTypes()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-#if (AutofacContainer)
-            Builder.RegisterTypeForNavigation<NavigationPage>();
-            Builder.RegisterTypeForNavigation<MainPage>();
-#else
-            Container.RegisterTypeForNavigation<NavigationPage>();
-            Container.RegisterTypeForNavigation<MainPage>();
-#endif
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage>();
         }
     }
 }

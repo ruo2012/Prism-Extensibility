@@ -89,7 +89,7 @@ namespace Prism.VisualStudio.Wizards
             {
                 TextPoint methodEndPoint = registerTypesFunction.GetEndPoint(vsCMPart.vsCMPartBody);
                 EditPoint editPoint = methodEndPoint.CreateEditPoint();
-                editPoint.Insert($"Container.RegisterTypeForNavigation<{_viewName}>();");
+                editPoint.Insert($"containerRegistry.RegisterForNavigation<{_viewName}>();");
                 editPoint.SmartFormat(methodEndPoint);
             }
         }
