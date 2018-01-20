@@ -1,7 +1,0 @@
-<AddinProject appVersion="7.0">
-    <Project platforms="Linux Win32 Mac">
-        <AddinFile>TemplatePack-XamarinStudio/bin/Release/TemplatePack-XamarinStudio.dll</AddinFile>
-        <BuildFile>TemplatePack-XamarinStudio.sln</BuildFile>
-        <BuildConfiguration>Release</BuildConfiguration>
-    </Project>
-</AddinProject>
